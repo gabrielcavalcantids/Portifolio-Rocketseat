@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans";
+  color: #837e9f;
+  text-decoration: none;
+}
+img {
+  display: inline-block;
+}
+h1,
+h2 {
+  font-size: 1rem;
+}
+
+body {
+  background-color: #22212c;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas:
+    "header main"
+    "header main";
+  gap: 3.75rem;
+  justify-content: center;
+  justify-items: center;
+  margin: 2.5rem;
+}
+/* Inicio da config global do Header */
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  max-width: 21.75rem;
+}
+header .cards {
+  background: #302f3d;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Fim da config global do Header */
+
+/* Profile Start */
+#profile {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: center;
+  justify-items: center;
+  padding: 2.5rem;
+  gap: 1.25rem;
+}
+#profile img {
+  border-radius: 100%;
+  border: 0.125rem solid #00ff00;
+}
+#profile .name-career {
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1.188rem;
+}
+#profile .name-career h1 {
+  font-size: 1.438rem;
+  font-weight: 700;
+}
+#profile .name-career h2 {
+  font-size: 0.813rem;
+  font-weight: 300;
+}
+/* Profile End*/
+
+/* Social Media Start */
+#social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.5rem;
+  gap: 0.625rem;
+}
+#social-media a {
+  display: flex;
+  place-items: center;
+  font-size: 0.813rem;
+  font-weight: 400;
+  column-gap: 1.25rem;
+}
+/* Social Media End */
+
+/* Techonologies Start */
+#technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+}
+#technologies h2 {
+  margin: 1.875rem 1.25rem 1.25rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+#technologies .tech-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.938rem;
+  margin-bottom: 1.875rem;
+}
+#technologies .tech-grid span {
+  width: 5.375rem;
+  height: 1.5rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #000;
+  background-color: #cb92b1;
+  border-radius: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Techonologies End */
+
+/* Experience Start */
+#experience {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+#experience h2 {
+  margin: 1.875rem 1.25rem 0rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+#experience ul {
+  width: inherit;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 1.25rem 2.5rem 1.875rem 2.5rem;
+}
+#experience li {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+#experience p {
+  padding-left: 1.25rem;
+  font-size: 0.813rem;
+  font-weight: 400;
+}
+#experience p:last-child {
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+/* Experience End */
+
+/* Education Start */
+#education {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+#education h2 {
+  margin: 1.875rem 1.25rem 0rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+#education ul {
+  width: fit-content;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1.25rem 2.5rem 1.875rem 2.5rem;
+}
+#education li {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+#education p {
+  padding-left: 1.25rem;
+  font-size: 0.813rem;
+  font-weight: 400;
+}
+#education p:last-child {
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+/* Education End */
+
+/* Main Start*/
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 1.25rem;
+}
+/* Main End */
+
+/* My Projects Start */
+.my-projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #302f3d;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 1.875rem;
+}
+.my-projects p {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.my-projects a {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+/* My Projects End */
+
+/* Projects Card Start */
+.p-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.875rem;
+}
+.p-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25rem;
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 1.875rem;
+}
+
+.p-card .pc-head a {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  font-size: 1rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.p-card .pc-main {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
+}
+.p-card .pc-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-card .pc-footer .pcf-left {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.pcf-left a,
+.pcf-right a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Projects Card End */
+
+/* Recent Posts Start */
+.recent-posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #302f3d;
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 1.875rem;
+}
+.recent-posts p {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.post-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  background: #302f3d;
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 1.875rem;
+}
+.p-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.p-main .p-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.p-main .p-title a {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.p-main .p-title p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.p-main .p-desc {
+  display: flex;
+  margin-bottom: -0.563rem;
+}
+.p-main .p-keywords {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+/* Recent Posts End */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+      "header header"
+      "main main";
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    gap: 2rem;
+  }
+
+  header {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0px 60px;
+    align-content: flex-start;
+    gap: 1.875rem;
+  }
+  main {
+    margin: 0px 60px;
+  }
+  #technologies {
+    grid-column: 1 / -1;
+  }
+
+  #technologies .tech-grid {
+    padding: 0px 1.25rem;
+  }
+
+  #technologies .tech-grid span {
+    width: 6rem;
+    height: 1.6rem;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 768px) {
+  body {
+    grid-template-columns: minmax(300px, 740px);
+    grid-template-areas:
+      "header"
+      "main";
+    margin: 40px auto;
+    gap: 2rem;
+  }
+
+  header {
+    grid-template-columns: minmax(300, 740px);
+    grid-area: header;
+    display: grid;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 1.875rem;
+    max-width: 740px;
+    margin: 0px 60px;
+  }
+  #technologies .tech-grid {
+    padding: 0px 1.25rem;
+  }
+
+  #technologies .tech-grid span {
+    width: 6rem;
+    height: 1.6rem;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    min-width: 300px;
+    max-width: 740px;
+    margin: 0px 60px;
+  }
+
+  .p-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .p-photo img {
+    display: none;
+  }
+  #technologies .tech-grid {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 20px) and (max-width: 580px) {
+  body {
+    grid-template-columns: minmax(300px, 540px);
+    grid-template-areas:
+      "header"
+      "main";
+    margin: 40px auto;
+    gap: 2rem;
+  }
+
+  header {
+    grid-template-columns: minmax(300, 540px);
+    grid-area: header;
+    display: grid;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 1.875rem;
+    max-width: 300px;  }
+  #technologies .tech-grid {
+    padding: 0px 1.25rem;
+  }
+
+  #technologies .tech-grid span {
+    width: 6rem;
+    height: 1.6rem;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    max-width: 310px;
+    margin: 0px 60px;
+  }
+
+  .p-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .p-photo img {
+    display: none;
+  }
+  #technologies .tech-grid {
+    padding: 0.5rem;
+  }
+  .p-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 200px;
+  }
+
+  .p-main .p-keywords {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 0.8rem;
+
+  }
+}
